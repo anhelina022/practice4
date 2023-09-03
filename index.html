@@ -3,66 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BEM</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <!-- Карта продукту -->
-    <!-- <article class="product">
-        <div class="product_overlay">
-          <img src="" alt="" class="product_image">
-        </div>
+    <!-- Блоки. Відповідаємо на питання "що це таке". "Як це виглядає" - не використовуємо -->
+    <!-- <a href="" class="logo"></a>
+   <p class="alert"></p>
+   <ul class="gallery"></ul>
+   <section class="section-features"></section>
+   <header class="page-header"></header>
+   <p class="text"></p>
+   <button class="button"></button> -->
 
-        <div class="product_content">
-            <h2 class="product_name">Холодильник</h2>
-            <p class="product_description">Опис</p>
-        </div>
+    <!-- Блок header із вкладеним a -->
+    <!-- <header class="page-header">
+      <a href="" class="logo"></a>
+      <ul class="gallery"></ul>
+    </header> -->
 
-        <div class="product_meta">
-            <p class="product_price">Ціна 4000</p>
-            <p class="product_quantity">На сайті ще 6 штук</p>
-        </div>
+    <!-- Елементи. Це частинка блоку. Без блоку сенсу вона не має -->
+    <!-- Назва: блок__елемент -->
+    <!-- <a href="" class="logo">
+      <img src="" alt="Логотип компанії" class="logo__image">
+      <span class="logo__label">Назва компанії</span>
+    </a> -->
+
+    <!-- Так не пишемо. Елемент за межами блоку не має значення -->
+    <!-- <img src="" alt="Логотип компанії" class="logo__image">
+
+    <article class="product">
+      <h1 class="product__name">Холодильник</h1>
+      <p class="product__price">Ціна: 200</p>
+      <a href="" class="product__link">Переглянути всі характеристики</a>
     </article> -->
 
-<!-- Необовʼязковість -->
+    <!-- Не має сенсу без блоку -->
+    <!-- <p class="product__price">Ціна: 200</p> -->
 
-<!-- Блок button з іконкою і з підписом -->
+    <!-- Вкладеність елементів -->
+    <!-- <ul class="nav">
+      <li class="nav__item">
+        <a href="" class="nav__link">Про нас</a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="nav__link">Контакти</a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="nav__link">Інше</a>
+      </li>
+     </ul> -->
 
-<!-- <button class="button" type="button"> 
-    <svg class="button icon"></svg> 
-    <span class="button_label">кошик</span>
-</button> -->
+    <!-- Картка продукту -->
+    <!-- <article class="product">
+        <div class="product__overlay">
+          <img src="" alt="" class="product__image">
+        </div>
 
-<!-- Блок button з підписом-->
+        <div class="product__content">
+          <h2 class="product__name">Холодильник</h2>
+          <p class="product__description">Опис</p>
 
-<!-- <button class="button" type= "button">
-<span class="button_label"> кошикс</spans>
-</button> -->
+          <div class="product__meta">
+            <p class="product__price">Ціна 4000</p>
+            <p class="product__quantity">На сайті ще 6 штук</p>
+          </div>
+        </div>
+     </article> -->
 
-<!-- Блок button з іконкою-->
+    <!-- Необов'язковість -->
 
-<!-- <button class="button" type="button">
-<svg class="button_icon"></svg> 
-</button> -->
+    <!-- Блок button з іконкою і з підписом -->
+    <!-- <button class="button" type="button">
+      <svg class="button__icon"></svg>
+      <span class="button__label">В кошик</span>
+     </button> -->
+    <!-- Блок button з підписом -->
+    <!-- <button class="button" type="button">
+      <span class="button__label">В кошик</span>
+     </button> -->
+    <!-- Блок button з іконкою -->
+    <!-- <button class="button" type="button">
+      <svg class="button__icon"></svg>
+     </button> -->
 
-<!-- Приклад 1 -->
-<!-- Іконка до тексту-->
+    <!-- Модифікатори -->
+    <!-- Визначають зміну зовнішнього вигляду або поведінки -->
+    <!-- Назва додаткового класу-модифікатору: блок--модифікатор, блок__елемент--модифікатор -->
 
-<!-- Іконка після тексту-->
-<!-- <button class="button" type="button">
-<span class="button_ label">кошик <span>
-<svg class="button_icon" width="32" height="32">
-<use href="./img/symbol-defs.svg#ticon-likes"></use>
-</svg>
-</button> -->
+    <!-- Базовий клас -->
+    <!-- <p class="alert"></p> -->
 
-<!-- Приклад 2 -->
+    <!-- Базовий клас та клас-модифікатор -->
+    <!-- <p class="alert alert--success"></p>
+     <p class="alert alert--error"></p>
+     <p class="alert alert--warning"></p> -->
 
-<!-- <div class="alert">У Вас 1 нове повідомлення.</div>
-<div class="alert alert--success">Завантаження файлу успішне!</div>
-<div class="alert alert--error">омилка завантаження.</div>
-<div class="alert alert--warning">На сайті ведуться технічні роботи</div> -->
+    <!-- Немає базового класу, немає значення -->
+    <!-- <p class="alert--warning"></p> -->
 
+    <!-- Приклад 1 -->
+    <!-- Іконка до тексту -->
+    <!-- <button class="button" type="button">
+      <svg class="button__icon button__icon--start" width="32" height="32">
+        <use href="./img/symbol-defs.svg#icon-likes"></use>
+      </svg>
+      <span class="button__label">В кошик</span>
+    </button> -->
+    <!-- Іконка після тексту -->
+    <!-- <button class="button" type="button">
+      <span class="button__label">В кошик</span>
+      <svg class="button__icon button__icon--end" width="32" height="32">
+        <use href="./img/symbol-defs.svg#icon-likes"></use>
+      </svg>
+    </button> -->
+    <!-- Кнопка без тексту, тільки іконка -->
+    <!-- <button class="button" type="button">
+      <svg class="button__icon" width="32" height="32">
+        <use href="./img/symbol-defs.svg#icon-likes"></use>
+      </svg>
+    </button> -->
+    <!-- Кнопка  без  іконки, тільки текст -->
+    <!-- <button class="button" type="button">
+      <span class="button__label">В кошик</span>
+    </button> -->
 
+    <!-- Приклад 2 -->
+    <!-- <div class="alert">У Вас 1 нове повідомлення.</div>
+    <div class="alert alert--success">Завантаження файлу успішне!</div>
+    <div class="alert alert--error">Помилка завантаження.</div>
+    <div class="alert alert--warning">На сайті ведуться технічні роботи.</div> -->
+
+    <!-- Мікси. Імена класів: блок-батько__блок-нащадок-->
+    <!-- <header class="page-header">
+      <a href="" class="logo page-header__logo">Логотип компанії</a>
+      <ul class="nav"></ul>
+    </header>
+
+    <footer class="page-footer">
+      <a href="" class="logo">Логотип компанії</a>
+    </footer> -->
+
+    <!-- Вкладені селектори -->
+    <!-- <div class="card">
+      <h1 class="card__title">Card title</h1>
+      <p class="card__text">Lorem, ipsum dolor.</p>
+      <a href="" class="card__link">Read more</a>
+    </div> -->
+
+    <!-- Секція товарів -->
+    <!-- Блок section -->
+    <section class="section">
+        <!-- Блок container -->
+        <div class="container">
+          <h2 class="section__heading">Найкращі товари</h2>
+          <!-- Блок grid -->
+          <ul class="grid">
+            <li class="grid__item">
+              <!-- Блок product -->
+              <article class="product">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1BKC-yaJn4j4pyFf9460YMp1kUetQd0aLg&usqp=CAU"
+                  alt="boots"
+                  class="product__image"
+                />
+                <h2 class="product__name">Boots</h2>
+                <p class="product__price">Price: 200$</p>
+                <button class="button product__button" type="button">
+                  В кошик
+                </button>
+              </article>
+            </li>
+            <li class="grid__item">
+              <!-- Блок product -->
+              <article class="product">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1BKC-yaJn4j4pyFf9460YMp1kUetQd0aLg&usqp=CAU"
+                  alt="boots"
+                  class="product__image"
+                />
+                <h2 class="product__name">Boots</h2>
+                <p class="product__price">Price: 200$</p>
+                <button class="button product__button" type="button">
+                  В кошик
+                </button>
+              </article>
+            </li>
+            <li class="grid__item">
+              <!-- Блок product -->
+              <article class="product">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1BKC-yaJn4j4pyFf9460YMp1kUetQd0aLg&usqp=CAU"
+                  alt="boots"
+                  class="product__image"
+                />
+                <h2 class="product__name">Boots</h2>
+                <p class="product__price">Price: 200$</p>
+                <button class="button product__button" type="button">
+                  В кошик
+                </button>
+              </article>
+            </li>
+            <li class="grid__item">
+              <!-- Блок product -->
+              <article class="product">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1BKC-yaJn4j4pyFf9460YMp1kUetQd0aLg&usqp=CAU"
+                  alt="boots"
+                  class="product__image"
+                />
+                <h2 class="product__name">Boots</h2>
+                <p class="product__price">Price: 200$</p>
+                <button class="button product__button" type="button">
+                  В кошик
+                </button>
+              </article>
+            </li>
+            <li class="grid__item">
+              <!-- Блок product -->
+              <article class="product">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1BKC-yaJn4j4pyFf9460YMp1kUetQd0aLg&usqp=CAU"
+                  alt="boots"
+                  class="product__image"
+                />
+                <h2 class="product__name">Boots</h2>
+                <p class="product__price">Price: 200$</p>
+                <button class="button product__button" type="button">
+                  В кошик
+                </button>
+              </article>
+            </li>
+            <li class="grid__item">
+              <!-- Блок product -->
+              <article class="product">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1BKC-yaJn4j4pyFf9460YMp1kUetQd0aLg&usqp=CAU"
+                  alt="boots"
+                  class="product__image"
+                />
+                <h2 class="product__name">Boots</h2>
+                <p class="product__price">Price: 200$</p>
+                <button class="button product__button" type="button">
+                  В кошик
+                </button>
+              </article>
+            </li>
+            <li class="grid__item">
+              <!-- Блок product -->
+              <article class="product">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1BKC-yaJn4j4pyFf9460YMp1kUetQd0aLg&usqp=CAU"
+                  alt="boots"
+                  class="product__image"
+                />
+                <h2 class="product__name">Boots</h2>
+                <p class="product__price">Price: 200$</p>
+                <button class="button product__button" type="button">
+                  В кошик
+                </button>
+              </article>
+            </li>
+            <li class="grid__item">
+              <!-- Блок product -->
+              <article class="product">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1BKC-yaJn4j4pyFf9460YMp1kUetQd0aLg&usqp=CAU"
+                  alt="boots"
+                  class="product__image"
+                />
+                <h2 class="product__name">Boots</h2>
+                <p class="product__price">Price: 200$</p>
+                <button class="button product__button" type="button">
+                  В кошик
+                </button>
+              </article>
+            </li>
+            <li class="grid__item">
+              <!-- Блок product -->
+              <article class="product">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1BKC-yaJn4j4pyFf9460YMp1kUetQd0aLg&usqp=CAU"
+                  alt="boots"
+                  class="product__image"
+                />
+                <h2 class="product__name">Boots</h2>
+                <p class="product__price">Price: 200$</p>
+                <button class="button product__button" type="button">
+                  В кошик
+                </button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
 </body>
 </html>

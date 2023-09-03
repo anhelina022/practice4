@@ -1,9 +1,20 @@
-/* .button_icon {
+/* .button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 3px gray;
+    cursor: pointer;
+}
+
+.button__icon {
     margin: 5px;
 }
 
-.button_icon--stert {
+.button__icon--start { 
     margin-right: 30px;
+}
+.button__icon--end {
+    margin-left: 30px;
 } */
 
 /* .alert {
@@ -14,7 +25,7 @@
     background-color: aliceblue;
     color: blue;
     margin: 20px;
-    box-shadow: 5px 5px 10px -3px grey;
+    box-shadow: 5px 5px 10px -3px gray;
     text-align: center;
 }
 
@@ -27,8 +38,142 @@
     background-color: red;
     color: #fff;
 }
-
 .alert--warning {
     background-color: orange;
     color: black;
 } */
+
+/* .page-header__logo {
+margin-right: 50px;
+} */
+
+/* body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.card {
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.card__title {
+    margin: 0;
+}
+
+.card__link {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: blue;
+    box-shadow: 5px 5px 10px -3px gray;
+    transition: background-color 250ms linear;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+.card__link::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1017/1017466.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: transform 250ms linear;
+} */
+/* Вкладені селектори */
+/* .card:hover .card__link {
+    background-color: green;
+}
+.card:hover .card__link::before {
+    transform: rotate(180deg);
+} */
+
+/* Секція товарів */
+body {
+    background-color: #fff;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+  }
+  /* компонент section */
+  .section {
+    padding: 20px;
+    background-color: lightblue;
+  }
+  .section__heading {
+    color: #fff;
+  }
+  /* компонент container */
+  .container {
+    width: 100%;
+  }
+  
+  /* компонент grid - сітка */
+  .grid {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+  }
+  
+  .grid__item {
+    width: 400px;
+    margin: 30px;
+  }
+  
+  /* компонент product */
+  .product {
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px -3px black;
+    background-color: #fff;
+  }
+  
+  .product__name {
+    margin: 10px 0;
+    font-size: 30px;
+  }
+  .product__price {
+    margin: 0;
+    font-size: 20px;
+  }
+  .product__button {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+  }
+  
+  /* компонент button */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px -5px black;
+    cursor: pointer;
+  }
+  
